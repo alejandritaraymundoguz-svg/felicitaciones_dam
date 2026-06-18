@@ -6,12 +6,11 @@
 
 body{
     font-family:'Poppins',sans-serif;
-    min-height:100vh;
-    overflow:hidden;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    min-height:100vh;
+
+    overflow-x:hidden;
+    overflow-y:auto;
 
     background:linear-gradient(
         135deg,
@@ -143,38 +142,40 @@ body{
 .container{
 
     width:100%;
-    max-width:850px;
+
+    min-height:100vh;
 
     display:flex;
 
     justify-content:center;
+
     align-items:center;
 
-    padding:15px;
+    padding:80px 10px 30px;
+
+    margin:auto;
 
     z-index:10;
 }
-
 /* ===== PANTALLAS ===== */
 
 .screen{
 
     display:none;
 
-    width:100%;
-    max-width:750px;
+    width:min(95%,750px);
+
+    margin:auto;
 
     background:
     rgba(255,255,255,.12);
 
-    backdrop-filter:
-    blur(15px);
+    backdrop-filter:blur(15px);
 
     border:
-    1px solid
-    rgba(255,255,255,.2);
+    1px solid rgba(255,255,255,.2);
 
-    border-radius:30px;
+    border-radius:25px;
 
     padding:30px;
 
@@ -183,8 +184,7 @@ body{
     color:white;
 
     box-shadow:
-    0 10px 30px
-    rgba(0,0,0,.25);
+    0 10px 30px rgba(0,0,0,.25);
 
     animation:
     aparecer .7s ease;
@@ -583,32 +583,65 @@ button:hover{
 
 @media(max-width:768px){
 
-    body{
-        overflow-x:hidden;
-    }
-
     .container{
-        padding:8px;
+
+        min-height:auto;
+
+        padding:
+        70px 10px 20px;
     }
 
     .screen{
-        padding:20px 12px;
-        max-width:100%;
+
+        width:95%;
+
+        padding:20px 15px;
+
+        border-radius:20px;
     }
 
     h1{
+
         font-size:1.7rem;
     }
 
+    h2{
+
+        font-size:1.2rem;
+    }
+
+    p{
+
+        font-size:.95rem;
+
+        line-height:1.6;
+    }
+
     .big-icon{
+
         font-size:65px;
     }
 
+    .icon-card{
+
+        padding:18px;
+    }
+
     .song{
+
         max-width:100%;
+
+        font-size:.95rem;
     }
 
     .nav-buttons{
+
+        display:flex;
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
         gap:8px;
     }
 
@@ -616,6 +649,74 @@ button:hover{
 
         min-width:110px;
 
+        padding:12px 18px;
+
         font-size:.9rem;
     }
+
+    .progress-container{
+
+        width:90%;
+    }
+
+}
+
+
+
+@media(max-width:430px){
+
+    .screen{
+
+        padding:18px 12px;
+    }
+
+    h1{
+
+        font-size:1.5rem;
+    }
+
+    .big-icon{
+
+        font-size:55px;
+    }
+
+    p{
+
+        font-size:.9rem;
+    }
+
+    button{
+
+        width:100%;
+        max-width:220px;
+    }
+
+}
+
+/* ===== IPHONE SE ===== */
+
+@media(max-width:375px){
+
+    h1{
+
+        font-size:1.3rem;
+    }
+
+    p{
+
+        font-size:.85rem;
+    }
+
+    .big-icon{
+
+        font-size:50px;
+    }
+
+}
+
+html{
+
+    -webkit-text-size-adjust:100%;
+
+    scroll-behavior:smooth;
 }
