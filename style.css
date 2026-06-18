@@ -157,8 +157,8 @@ body{
 
     z-index:10;
 }
-/* ===== PANTALLAS ===== */
 
+/* ===== PANTALLAS ===== */
 .screen{
 
     display:none;
@@ -193,6 +193,7 @@ body{
 
     z-index:10;
 }
+
 .active{
     display:block;
 }
@@ -580,72 +581,38 @@ button:hover{
     height:100%;
 
     pointer-events:none;
-
-    z-index:1;
 }
+
 /* ===== CELULAR ===== */
 
 @media(max-width:768px){
 
+    body{
+        overflow-x:hidden;
+    }
+
     .container{
-
-        min-height:auto;
-
-        padding:
-        70px 10px 20px;
+        padding:8px;
     }
 
     .screen{
-
-        width:95%;
-
-        padding:20px 15px;
-
-        border-radius:20px;
+        padding:20px 12px;
+        max-width:100%;
     }
 
     h1{
-
         font-size:1.7rem;
     }
 
-    h2{
-
-        font-size:1.2rem;
-    }
-
-    p{
-
-        font-size:.95rem;
-
-        line-height:1.6;
-    }
-
     .big-icon{
-
         font-size:65px;
     }
 
-    .icon-card{
-
-        padding:18px;
-    }
-
     .song{
-
         max-width:100%;
-
-        font-size:.95rem;
     }
 
     .nav-buttons{
-
-        display:flex;
-
-        flex-wrap:wrap;
-
-        justify-content:center;
-
         gap:8px;
     }
 
@@ -653,66 +620,46 @@ button:hover{
 
         min-width:110px;
 
-        padding:12px 18px;
-
         font-size:.9rem;
     }
-
-    .progress-container{
-
-        width:90%;
-    }
-
 }
-
-
 
 @media(max-width:430px){
 
     .screen{
-
         padding:18px 12px;
     }
 
     h1{
-
         font-size:1.5rem;
     }
 
     .big-icon{
-
         font-size:55px;
     }
 
     p{
-
         font-size:.9rem;
     }
 
     button{
-
         width:100%;
         max-width:220px;
     }
 
 }
 
-/* ===== IPHONE SE ===== */
-
 @media(max-width:375px){
 
     h1{
-
         font-size:1.3rem;
     }
 
     p{
-
         font-size:.85rem;
     }
 
     .big-icon{
-
         font-size:50px;
     }
 
