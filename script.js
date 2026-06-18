@@ -252,19 +252,15 @@ function crearConfeti(){
 
     for(
         let i = 0;
-        i < 120;
+        i < 200;
         i++
     ){
 
         confetti.push({
 
             x:
-            Math.random() > 0.5
-
-            ? Math.random() * (canvas.width * 0.15)
-
-            : canvas.width -
-              Math.random() * (canvas.width * 0.15),
+            Math.random() *
+            canvas.width,
 
             y:
             Math.random() *
