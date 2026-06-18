@@ -159,7 +159,40 @@ body{
 }
 /* ===== PANTALLAS ===== */
 
+.screen{
 
+    display:none;
+
+    width:min(95%,750px);
+
+    margin:auto;
+
+    background:
+    rgba(255,255,255,.12);
+
+    backdrop-filter:blur(15px);
+
+    border:
+    1px solid rgba(255,255,255,.2);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    text-align:center;
+
+    color:white;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.25);
+
+    animation:
+    aparecer .7s ease;
+
+    position:relative;
+
+    z-index:10;
+}
 .active{
     display:block;
 }
