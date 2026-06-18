@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+FELICITACIONES
+</title>
+
+<link
+rel="stylesheet"
+href="style.css">
+
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="stars"></div>
+<div class="stars2"></div>
+<div class="stars3"></div>
+
+<audio id="musica" loop></audio>
+
+<div class="progress-container">
+<div class="progress-bar" id="progressBar"></div>
+</div>
+
+<div class="container">
+
+
+
+<section class="screen active">
+
+<h1>
+✨ Holaaaa ✨
+</h1>
+
+<p class="subtitle">
+
+Realicé una pequeña página para celebrar algunos momentos importantes de tu vida.
+
+</p>
+
+<p class="small-message">
+
+✨ Una pequeña felicitación por todo lo que has logrado recientemente.
+
+</p>
+
+<p class="mini">
+
+🎂 Cumpleaños • 🎓 Graduación • 🦷 Odontología
+
+</p>
+
+<div class="playlist">
+
+<h3>
+🎵 Algunas canciones que te gustan creo
+</h3>
+
+<div
+class="song"
+onclick="playSong('elpoeta.mp3',this)">
+
+🎵 El Poeta - Humbe
+
+</div>
+
+<div
+class="song"
+onclick="playSong('sincerate.mp3',this)">
+
+🎵 Sincera te - Milo j
+
+</div>
+
+<div
+class="song"
+onclick="playSong('agua.mp3',this)">
+
+🎵 Cuando El Agua Hirviendo - Milo j
+
+</div>
+
+</div>
+
+<div class="music-controls">
+
+<button
+class="music-btn"
+onclick="toggleMusic()">
+
+⏸️ Pausar Música
+
+</button>
+
+</div>
+
+<button
+class="next-btn"
+onclick="nextScreen()">
+
+Ver sorpresa →
+
+</button>
+
+</section>
+
+<section class="screen">
+
+<h1>
+🎂 FELIZ CUMPLEAÑOS
+</h1>
+
+<div class="icon-card">
+
+<span class="big-icon">
+🎂
+</span>
+
+<p>
+
+Un año más de experiencias,
+aprendizajes y momentos especiales.
+
+</p>
+
+<p>
+
+Cada cumpleaños representa una nueva oportunidad para crecer, aprender cosas nuevas y seguir construyendo recuerdos importantes.
+
+</p>
+
+<p>
+
+Espero que este nuevo año te traiga muchas alegrías, metas cumplidas y momentos que valga la pena recordar.
+
+</p>
+
+<p class="frase">
+
+✨ "Que nunca te falten motivos para celebrar lo lejos que has llegado."
+
+</p>
+
+</div>
+
+<div class="nav-buttons">
+
+<button
+class="back-btn"
+onclick="prevScreen()">
+
+⬅️ Atrás
+
+</button>
+
+<button
+class="next-btn"
+onclick="nextScreen()">
+
+Siguiente →
+
+</button>
+
+</div>
+
+</section>
+
+<section class="screen">
+
+<h1>
+🎓 Graduación
+</h1>
+
+<div class="icon-card">
+
+<span class="big-icon">
+🎓
+</span>
+
+<p>
+
+    Después de tantos desvelos, tareas, exámenes y momentos difíciles, por fin llegó el día de celebrar todo lo que has logrado.
+    
+    </p>
+    
+    <p>
+    
+    Graduarse no es algo que cualquiera consigue. Es el resultado de todo el esfuerzo que pusiste durante estos años y de no rendirte cuando las cosas se ponian diciles.
+    
+    </p>
+    
+    <p>
+
+        Me alegra mucho verte alcanzar una meta tan importante. Es admirable todo el esfuerzo y la dedicación que le pusiste para llegar hasta aquí. 
+        
+    </p>
+    
+    <p>
+    
+    Espero que lo hayas disfrutado mucho. Felicidades por este gran logro y por todo lo que aún está por venir.
+    
+    </p>
+
+<p class="frase">
+
+🌟 "Las metas cumplidas son la prueba de que los sueños también se construyen con esfuerzo."
+
+</p>
+
+</div>
+
+<div class="nav-buttons">
+
+<button
+class="back-btn"
+onclick="prevScreen()">
+
+⬅️ Atrás
+
+</button>
+
+<button
+class="next-btn"
+onclick="nextScreen()">
+
+Siguiente →
+
+</button>
+
+</div>
+
+</section>
+
+
+<section class="screen">
+
+    <h1>
+    🦷 Odontología
+    </h1>
+    
+    <div class="icon-card">
+    
+    <span class="big-icon">
+    🦷
+    </span>
+    
+    <p>
+    
+    Comienza una nueva etapa llena de aprendizaje,
+    retos y experiencias que seguramente te ayudarán
+    a crecer tanto personal como profesionalmente.
+    
+    </p>
+    
+    <p>
+    
+    La odontología es una carrera que requiere
+    paciencia, dedicación y muchas ganas de seguir
+    aprendiendo cada día.
+    
+    </p>
+    
+    <p>
+    
+    Estoy segura de que lograrás grandes cosas.
+    
+    </p>
+    
+    <p>
+    
+    Este es solo el comienzo de un camino lleno
+    de nuevas oportunidades y metas por alcanzar.
+    
+    </p>
+    
+    <p class="frase">
+    
+    🦷 "El futuro pertenece a quienes trabajan hoy por lo que quieren lograr mañana."
+    
+    </p>
+    
+    </div>
+    
+    <div class="nav-buttons">
+    
+    <button
+    class="back-btn"
+    onclick="prevScreen()">
+    
+    ⬅️ Atrás
+    
+    </button>
+    
+    <button
+    class="next-btn"
+    onclick="nextScreen()">
+    
+    Siguiente →
+    
+    </button>
+    
+    </div>
+    
+    </section>
+    
+    
+    <section class="screen">
+    
+    <h1>
+    📖 Línea del Tiempo 2026
+    </h1>
+    
+    <p>
+    
+    Este año estuvo lleno de momentos importantes
+    que marcaron el inicio de nuevas etapas y la
+    conclusión de otras.
+    
+    </p>
+    
+    <p>
+    
+    Cada uno de estos logros representa un paso más
+    en el camino que estás construyendo para tu futuro.
+    
+    </p>
+    
+    <div class="cards">
+    
+    <div class="info-card timeline-item">
+    🎂 Un año más de experiencias
+    </div>
+    
+    <div class="info-card timeline-item">
+    🎓 Meta importante alcanzada
+    </div>
+    
+    <div class="info-card timeline-item">
+    ⭐ Nuevos retos desbloqueados
+    </div>
+    
+    <div class="info-card timeline-item">
+    🦷 Inicio de una nueva carrera
+    </div>
+    
+    <div class="info-card timeline-item">
+    📚 Mucho aprendizaje por delante
+    </div>
+    
+    <div class="info-card timeline-item">
+    ✨ Grandes metas en camino
+    </div>
+    
+    </div>
+    
+    <p class="frase">
+    
+    📖 "Cada capítulo termina para dar paso a uno aún mejor."
+    
+    </p>
+    
+    <div class="nav-buttons">
+    
+    <button
+    class="back-btn"
+    onclick="prevScreen()">
+    
+    ⬅️ Atrás
+    
+    </button>
+    
+    <button
+    class="next-btn"
+    onclick="nextScreen()">
+    
+    Ver mensaje final ✨
+    
+    </button>
+    
+    </div>
+    
+    </section>
+    
+    
+    <section class="screen">
+    
+    <h1>
+    🌟 Mensaje Final 🌟
+    </h1>
+    
+    <p>
+    
+    Quería felicitarte por
+    todo lo que has logrado recientemente.
+    
+    </p>
+    
+    <p>
+    
+    En poco tiempo has vivido momentos muy importantes:
+    un cumpleaños más, una graduación y el comienzo
+    de una nueva etapa enfocada en la odontología.
+    
+    </p>
+    
+    <p>
+    
+    Son logros que merecen ser reconocidos porque
+    cada uno de ellos representa esfuerzo, dedicación
+    y muchas ganas de seguir adelante.
+    
+    </p>
+    
+    <p>
+    
+    También me alegra que hayamos vuelto a hablar
+    después de un tiempo, y por eso quise hacer
+    este pequeño detalle.
+    
+    </p>
+    
+    <p>
+    
+    Espero que todo lo bueno que viene para ti
+    sea incluso mejor de lo que imaginas y que
+    nunca pierdas la confianza en ti.
+    
+    </p>
+    
+    <p>
+    
+    Sigue persiguiendo tus metas, aprendiendo cosas
+    nuevas y disfrutando cada etapa del camino.
+    
+    </p>
+    
+    <p class="frase">
+    
+        💜 "Este logro refleja el esfuerzo y la constancia que te han acompañado durante todo este tiempo."
+
+    
+    </p>
+    
+    
+    
+    <button
+    class="future-btn"
+    onclick="showFuture()">
+    
+    EN UN FUTURO
+    
+    </button>
+    
+    <div class="nav-buttons">
+    
+    <button
+    class="back-btn"
+    onclick="prevScreen()">
+    
+    ⬅️ Atrás
+    
+    </button>
+    
+    <button
+    class="home-btn"
+    onclick="goHome()">
+    
+    🏠 Inicio
+    
+    </button>
+    
+    </div>
+    
+    <div id="futureMessage">
+    
+    <h2>
+    🔮 Año 2032
+    </h2>
+    
+    <p>
+    🦷 Odontóloga graduada
+    </p>
+    
+    <p>
+    🏆 Muchas metas cumplidas
+    </p>
+    
+    <p>
+    📚 Mucho conocimiento adquirido
+    </p>
+    
+    <p>
+    ✈️ Nuevas experiencias
+    </p>
+    
+    <p>
+    ⭐ Más logros por desbloquear
+    </p>
+    
+    <p>
+    ✨ Siguiendo adelante
+    </p>
+    
+    <div class="final-box">
+    
+    <h3>
+    🎉 FINNNNNN 🎉
+    </h3>
+    
+    <p>
+    
+    Espero que te haya gustado este pequeño detalle.
+    
+    </p>
+    
+    <p>
+    
+    Y que todos los proyectos que vienen se conviertan
+    en logros y experiencias positivas.
+    
+    </p>
+    
+    <p>
+    
+    Gracias por tomarte el tiempo de verlo.
+    
+    </p>
+    
+    <p>
+    
+    Sigue brillando y alcanzando todo aquello que te propongas.
+    
+    </p>
+    
+    <p class="firma">
+    Te quiero. Atte Rosario 💜
+    </p>
+    
+    <button
+    class="exit-btn"
+    onclick="finishSurprise()">
+    
+    ✨ Finalizar
+    
+    </button>
+    
+    <div id="endMessage">
+    
+    <h2>
+    ✨ Gracias por ver este pequeño detalle ✨
+    </h2>
+    
+    <p>
+        Espero que te haya gustado. Puede ser algo simple, pero quise hacer este pequeño detalle para felicitarte por todo lo que has logrado recientemente.
+    </p>
+    
+    <p>
+    Puedes cerrar esta página cuando quieras.
+    </p>
+    
+    <p>
+    💜
+    </p>
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    </section>
+    
+    </div>
+    
+    <canvas id="confetti"></canvas>
+    
+    <script src="script.js"></script>
+    
+    </body>
+    </html>
