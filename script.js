@@ -248,20 +248,23 @@ canvas.height =
 window.innerHeight;
 
 const confetti = [];
-
 function crearConfeti(){
 
     for(
         let i = 0;
-        i < 200;
+        i < 120;
         i++
     ){
 
         confetti.push({
 
             x:
-            Math.random() *
-            canvas.width,
+            Math.random() > 0.5
+
+            ? Math.random() * (canvas.width * 0.15)
+
+            : canvas.width -
+              Math.random() * (canvas.width * 0.15),
 
             y:
             Math.random() *
@@ -269,10 +272,10 @@ function crearConfeti(){
             canvas.height,
 
             size:
-            Math.random() * 8 + 4,
+            Math.random() * 5 + 2,
 
             speed:
-            Math.random() * 3 + 2,
+            Math.random() * 2 + 1,
 
             color:[
                 "#ffffff",
